@@ -7,48 +7,31 @@
   <title>GRID - EJ4</title>
   <style>
     header {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */ 
+      grid-area: encab;
       height: 75px
     }
 
     nav {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */ 
+        grid-area: naveg;
     }
 
     aside.menu {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */       
-      height: 200px;
+        grid-area: barra_lat;
+        height: 200px;
+      
     }
 
     article {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */ 
+        grid-area: arti;
     }
 
     aside.publi {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */ 
-      height: 50px;
+        grid-area: publi;
+        height: 50px;
     }
 
     footer {
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      grid-area: ;
-      */ 
+      grid-area: pie;
     }
 
     .contenedor > * {
@@ -59,11 +42,13 @@
     }
 
     .contenedor{
-      /* USA LAS SIGUIENTES PROPIEDADES */
-      /*
-      display: ;
-      grid-gap: ;
-      grid-template-areas:      */ 
+      display: grid;
+      grid-gap: 20px;
+      grid-template-areas:
+        "encab encab encab encab"
+        "naveg naveg naveg naveg"
+        "barra_lat arti arti arti"
+        "publi pie pie pie"
     }
   </style>
 </head>
@@ -75,6 +60,6 @@
     <article>ARTÍCULO</article>
     <aside class="publi">PUBLICDIDAD</aside>
     <footer>FOOTER</footer>
-  </div>  
+   </div>  
 </body>
 </html>
